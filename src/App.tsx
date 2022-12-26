@@ -31,10 +31,22 @@ export default function App() {
     }
   }
 
+  if (!window.ethereum) {
+    return (
+      <div className="container my-3">
+        <a href="https://metamask.io/" target="_blank" rel="noreferrer">
+          <Button>Install MetaMask</Button>
+        </a>
+      </div>
+    )
+  }
+
   if (!account) {
     return (
       <div className="container my-3">
-        <Button onClick={connect}>Connect Wallet</Button>
+        <Button variant="success" onClick={connect}>
+          Connect Wallet
+        </Button>
       </div>
     )
   }

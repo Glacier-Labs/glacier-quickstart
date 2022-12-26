@@ -14,7 +14,8 @@ export default function useMetaMask() {
   }, [])
 
   const eagerConnect = useCallback(async () => {
-    const accounts = await window.ethereum.request<string[]>({
+    if (!window.ethereum) return
+    const accounts = await window.ethereum?.request<string[]>({
       method: 'eth_accounts',
       params: []
     })
@@ -23,7 +24,7 @@ export default function useMetaMask() {
   }, [])
 
   useEffect(() => {
-    window.ethereum.on('accountsChanged', args => {
+    window.ethereum?.on('accountsChanged', args => {
       const accounts = args as string[]
       if (accounts) setAccount(accounts[0])
       setProvider(window.ethereum)
