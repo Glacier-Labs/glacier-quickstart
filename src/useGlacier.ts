@@ -8,7 +8,7 @@ export default function useGlacier() {
   const { provider, account, connect, eagerConnect } = useMetaMask()
 
   const client = useMemo(() => {
-    return new GlacierClient('http://p0.onebitdev.com/glacier-gateway', {
+    return new GlacierClient('https://p0.onebitdev.com/glacier-gateway', {
       provider
     })
   }, [provider])
