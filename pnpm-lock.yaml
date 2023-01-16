@@ -1,7 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@glacier-network/client': ^0.1.2
+  '@glacier-network/client': ^0.2.0
   '@metamask/providers': ^10.2.1
   '@types/react': ^18.0.26
   '@types/react-dom': ^18.0.9
@@ -16,7 +16,7 @@ specifiers:
   vite: ^4.0.0
 
 dependencies:
-  '@glacier-network/client': registry.npmjs.org/@glacier-network/client/0.1.2
+  '@glacier-network/client': registry.npmjs.org/@glacier-network/client/0.2.0
   bootstrap: 5.2.3
   react: 18.2.0
   react-bootstrap: 2.7.0_ib3m5ricvtkl2cll7qpr2f6lvq
@@ -2384,8 +2384,8 @@ packages:
     engines: {node: '>=4'}
     dev: true
 
-  /axios/1.2.1:
-    resolution: {integrity: sha512-I88cFiGu9ryt/tfVEi4kX2SITsvDddTajXTOFmt2uK1ZVA8LytjtdeyefdQWEf5PU8w+4SSJDoYnggflB5tW4A==}
+  /axios/1.2.2:
+    resolution: {integrity: sha512-bz/J4gS2S3I7mpN/YZfGFTqhXTYzRho8Ay38w2otuuDR322KzFIWm/4W2K6gIwvWaws5n+mnb7D1lN9uD+QH6Q==}
     dependencies:
       follow-redirects: 1.15.2
       form-data: 4.0.0
@@ -4584,19 +4584,21 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
-  registry.npmjs.org/@glacier-network/client/0.1.2:
-    resolution: {integrity: sha512-1KOMQ4mxlXpqhh0u0eaARG57nNS5Jln6rm+vlC12WyQ9wWjNDvrY3frA7nBHKfxf82BG9bSG2UzLXSL3iN58hQ==, registry: https://registry.npmjs.com/, tarball: https://registry.npmjs.org/@glacier-network/client/-/client-0.1.2.tgz}
+  registry.npmjs.org/@glacier-network/client/0.2.0:
+    resolution: {integrity: sha512-kRL4cF4ZwcSRnCaQ+1ikE9CvnFcVzfOWct7FnNB6BZP8WEeGE61yXBCfC4OGSe84IqM1S+ud4hWpODaCtGxCLg==, registry: https://registry.npmjs.com/, tarball: https://registry.npmjs.org/@glacier-network/client/-/client-0.2.0.tgz}
     name: '@glacier-network/client'
-    version: 0.1.2
+    version: 0.2.0
     dependencies:
       '@ethersproject/abstract-signer': 5.7.0
       '@ethersproject/bytes': 5.7.0
       '@ethersproject/hash': 5.7.0
       '@ethersproject/providers': 5.7.2
+      '@ethersproject/sha2': 5.7.0
       '@ethersproject/signing-key': 5.7.0
+      '@ethersproject/strings': 5.7.0
       '@ethersproject/wallet': 5.7.0
       '@types/json-schema': 7.0.11
-      axios: 1.2.1
+      axios: 1.2.2
     transitivePeerDependencies:
       - bufferutil
       - debug
